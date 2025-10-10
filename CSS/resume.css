@@ -32,3 +32,12 @@ img{
     width: 15%;
     font-family: "JetBrains Mono ExtraBold";
 }
+footer div li{
+    display:inline-block;
+    width: 20% ;
+}
+footer a{
+    text-decoration: none;
+
+}
+

@@ -1,0 +1,34 @@
+html,button,input,select,text{
+    color:#444;
+}
+html{
+    font-size:1em;
+    line-height: 1.4;
+}
+body{
+    background:#777;
+}
+#wrapper{
+    max-width: 900px;
+    min-width: 320px;
+    margin: auto;
+
+}
+.entete{
+    display: flex;
+justify-content: space-between;
+}
+img{
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    background: #FFFFFF;
+    box-shadow: 2px 4px rgba(0,0,0,0.2);
+    width:50%;
+}
+.info{
+    display: flex;
+}
+.info p{
+    width: 15%;
+    font-family: "JetBrains Mono ExtraBold";
+}

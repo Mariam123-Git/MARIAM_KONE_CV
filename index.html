@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Mon CV</title>
+    <meta name="description" content="A propos de moi">
+    <meta name="Keywords" content="web,developer,resume">
+    <meta name="author" content="Mariam Koné">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/resume.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+<div id="wrapper" itemscope itemtype="https://schema.org/Person">
+    <header>
+        <div class="entete">
+            <div class="name">
+                <h1 itemprop="name">Mariam Koné</h1>
+                <h2 itemprop="jobTitle">Étudiante en Génie Informatique</h2>
+            </div>
+
+            <div class="img">
+                <img itemprop="image" src="img/portrait-femme.jpg" alt="Portrait de Mariam Koné" width="150" height="150">
+            </div>
+        </div>
+
+        <div class="info">
+            <p itemprop="address">4 rue Brest</p>
+            <p itemprop="birthDate">2004-10-17</p>
+            <p>Email : <a href="mailto:mariam.kone@example.com" itemprop="email">mariam.kone@example.com</a></p>
+            <p>Téléphone : <span itemprop="telephone">+33 6 12 34 56 78</span></p>
+            <p>Nationalité : <span itemprop="nationality">Malienne</span></p>
+        </div>
+    </header>
+
+    <div class="profile">
+        <h1>Profil</h1>
+        <p itemprop="description">
+            Étudiante en 2ᵉ année du cycle d’ingénieur en Génie Informatique à l’Université de Bretagne Occidentale,
+            passionnée par le développement logiciel et les technologies innovantes.
+            Autonome, rigoureuse et motivée, je souhaite mettre mes compétences techniques au service de votre entreprise
+            pour approfondir mes connaissances en conception et en développement d’applications.
+        </p>
+    </div>
+
+    <article>
+        <h1>Expériences Professionnelles</h1>
+
+        <div itemprop="hasOccupation" itemscope itemtype="https://schema.org/Occupation">
+            <p><span><em>Stage – Baye Conception (2024)</em></span></p>
+            <ul>
+                <li>Réalisation d’une application web en HTML, CSS, JavaScript et SQL pour la gestion de contenu.</li>
+                <li>Découverte du travail en équipe et du cycle de développement complet.</li>
+            </ul>
+        </div>
+
+        <div itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
+            <p><span><em>Projet de fin d’année – ENSAK</em></span></p>
+            <ul>
+                <li>Scraping et classification des offres d’emploi avec Java, Machine Learning et NLP.</li>
+                <li>Automatisation de la collecte et de la catégorisation des annonces publiées sur des portails marocains.</li>
+            </ul>
+        </div>
+    </article>
+
+    <div class="compt">
+        <h1>Compétences</h1>
+        <ul itemprop="skills">
+            <li>Langages : Java, JavaScript, Python, SQL, HTML, CSS</li>
+            <li>Bases de données : Oracle, MySQL, PostgreSQL</li>
+            <li>Outils : Git, Docker, Gradle, VS Code, IntelliJ IDEA, MATLAB, RStudio</li>
+            <li>Concepts : POO, Machine Learning, NLP, développement web, analyse de données</li>
+        </ul>
+    </div>
+
+    <div class="formation">
+        <h1>Formation</h1>
+
+        <div itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+            <p><em itemprop="name">Université de Bretagne Occidentale (UBO)</em></p>
+            <p>Cycle d’ingénieur en Génie Informatique</p>
+        </div>
+
+        <div itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+            <p><em itemprop="name">École Nationale des Sciences Appliquées de Kénitra (ENSAK)</em></p>
+            <p>Génie Informatique – Projets en Machine Learning et développement web</p>
+        </div>
+    </div>
+
+    <div class="lang">
+        <h1>Langues</h1>
+        <p itemprop="knowsLanguage">Français, Anglais</p>
+    </div>
+
+    <div class="hobbie">
+        <h1>Centres d’intérêt</h1>
+        <p itemprop="hasOccupation">Lecture, Sports (basketball)</p>
+    </div>
+
+    <footer>
+        <div>
+            <ul style="list-style: none;">
+                <li>
+                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/" itemprop="sameAs">GitHub</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/" itemprop="sameAs">LinkedIn</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-flickr"></i>
+                    <a href="https://www.flickr.com/" itemprop="sameAs">Flickr</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

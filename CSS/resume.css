@@ -54,3 +54,20 @@ footer a{
     pointer-events: none;
     transition: opacity 0.2s;
 }
+
+.star {
+    color: gold;
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+.bar {
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    background-color: #4CAF50;
+    text-align: center;
+    color: #fff;
+    font-size: 0.8em;
+    border-radius: 3px 3px 0 0;
+}

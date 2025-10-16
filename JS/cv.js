@@ -92,3 +92,44 @@ tooltipElements.forEach(el => {
         tooltipBox.style.opacity = 0;
     });
 });
+
+
+// Données compétences + niveau (1 à 5)
+const skillsData = [
+    { name: "Java", selector: ".compt .tooltip[data-tooltip*='Java']", level: 5 },
+    { name: "JavaScript", selector: ".compt .tooltip[data-tooltip*='JavaScript']", level: 4 },
+    { name: "Python", selector: ".compt .tooltip[data-tooltip*='Python']", level: 4 },
+    { name: "SQL", selector: ".compt .tooltip[data-tooltip*='SQL']", level: 4 },
+    { name: "HTML", selector: ".compt .tooltip[data-tooltip*='HTML']", level: 4 },
+    { name: "CSS", selector: ".compt .tooltip[data-tooltip*='CSS']", level: 4 },
+    { name: "Oracle", selector: ".compt .tooltip[data-tooltip*='Oracle']", level: 4 },
+    { name: "MySQL", selector: ".compt .tooltip[data-tooltip*='MySQL']", level: 4 },
+    { name: "PostgreSQL", selector: ".compt .tooltip[data-tooltip*='PostgreSQL']", level: 3 },
+    { name: "Git", selector: ".compt .tooltip[data-tooltip*='Git']", level: 5 },
+    { name: "Docker", selector: ".compt .tooltip[data-tooltip*='Docker']", level: 4 },
+    { name: "Gradle", selector: ".compt .tooltip[data-tooltip*='Gradle']", level: 3 },
+    { name: "VS Code", selector: ".compt .tooltip[data-tooltip*='VS Code']", level: 5 },
+    { name: "IntelliJ IDEA", selector: ".compt .tooltip[data-tooltip*='IntelliJ IDEA']", level: 5 },
+    { name: "MATLAB", selector: ".compt .tooltip[data-tooltip*='MATLAB']", level: 4 },
+    { name: "RStudio", selector: ".compt .tooltip[data-tooltip*='RStudio']", level: 4 },
+    { name: "POO", selector: ".compt .tooltip[data-tooltip*='POO']", level: 5 },
+    { name: "Machine Learning", selector: ".compt .tooltip[data-tooltip*='Machine Learning']", level: 4 },
+    { name: "NLP", selector: ".compt .tooltip[data-tooltip*='NLP']", level: 3 },
+    { name: "Développement web", selector: ".compt .tooltip[data-tooltip*='Développement web']", level: 5 },
+    { name: "Analyse de données", selector: ".compt .tooltip[data-tooltip*='Analyse de données']", level: 4 }
+];
+
+skillsData.forEach(skill => {
+    const span = document.querySelector(skill.selector);
+    if (span) {
+        // Créer les étoiles
+        const stars = document.createElement('span');
+        stars.className = 'stars';
+        stars.style.color = 'gold';
+        stars.style.marginLeft = '5px'; // espace après le texte
+        stars.textContent = "★".repeat(skill.level);
+
+        // Insérer les étoiles **après** le span
+        span.parentNode.insertBefore(stars, span.nextSibling);
+    }
+});

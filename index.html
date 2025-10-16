@@ -28,7 +28,7 @@
         </div>
 
         <div class="info">
-            <p itemprop="address">4 rue Brest</p>
+            <p itemprop="address">Brest,France</p>
             <p itemprop="birthDate">2020-10-17</p>
             <p><a href="mailto:mariam.kone@example.com" itemprop="email">mariam@gmail.com</a></p>
         </div>
@@ -46,16 +46,15 @@
 
     <article>
         <h1>Expériences Professionnelles</h1>
-
         <div itemprop="hasOccupation" itemscope itemtype="https://schema.org/Occupation">
             <p><span><em>Stage – Baye Conception (2024)</em></span></p>
-            <ul>
+                      <ul >
                 <li>Réalisation d’une application web en HTML, CSS, JavaScript et SQL pour la gestion de contenu.</li>
                 <li>Découverte du travail en équipe et du cycle de développement complet.</li>
             </ul>
         </div>
 
-        <div itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
+        <div  itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
             <p><span><em>Projet de fin d’année – ENSAK</em></span></p>
             <ul>
                 <li>Scraping et classification des offres d’emploi avec Java, Machine Learning et NLP.</li>
@@ -66,27 +65,81 @@
 
     <div class="compt">
         <h1>Compétences</h1>
+
         <ul itemprop="skills">
-            <li>Langages : Java, JavaScript, Python, SQL, HTML, CSS</li>
-            <li>Bases de données : Oracle, MySQL, PostgreSQL</li>
-            <li>Outils : Git, Docker, Gradle, VS Code, IntelliJ IDEA, MATLAB, RStudio</li>
-            <li>Concepts : POO, Machine Learning, NLP, développement web, analyse de données</li>
+            <li>
+                Langages :
+                <span class="tooltip" data-tooltip="Java : Langage orienté objet utilisé pour applications desktop, web et Android.">Java</span>,
+                <span class="tooltip" data-tooltip="JavaScript : Langage pour rendre les pages web interactives et côté serveur avec Node.js.">JavaScript</span>,
+                <span class="tooltip" data-tooltip="Python : Langage polyvalent pour scripts, data science, IA et développement web.">Python</span>,
+                <span class="tooltip" data-tooltip="SQL : Langage pour manipuler et interroger les bases de données relationnelles.">SQL</span>,
+                <span class="tooltip" data-tooltip="HTML : Langage de structuration des pages web.">HTML</span>,
+                <span class="tooltip" data-tooltip="CSS : Langage pour styliser les pages web et créer des designs responsives.">CSS</span>
+            </li>
+            <li>
+                Bases de données :
+                <span class="tooltip" data-tooltip="Oracle : Base de données relationnelle utilisée en entreprise.">Oracle</span>,
+                <span class="tooltip" data-tooltip="MySQL : Base de données relationnelle open source populaire.">MySQL</span>,
+                <span class="tooltip" data-tooltip="PostgreSQL : Base de données relationnelle avancée et open source.">PostgreSQL</span>
+            </li>
+            <li>
+                Outils :
+                <span class="tooltip" data-tooltip="Git : Gestionnaire de versions pour le code source.">Git</span>,
+                <span class="tooltip" data-tooltip="Docker : Conteneurs pour déploiement et développement isolé.">Docker</span>,
+                <span class="tooltip" data-tooltip="Gradle : Outil d’automatisation de build pour projets Java et Android.">Gradle</span>,
+                <span class="tooltip" data-tooltip="VS Code : Éditeur de code polyvalent et extensible.">VS Code</span>,
+                <span class="tooltip" data-tooltip="IntelliJ IDEA : IDE pour Java et développement professionnel.">IntelliJ IDEA</span>,
+                <span class="tooltip" data-tooltip="MATLAB : Logiciel pour calcul numérique, simulation et analyse.">MATLAB</span>,
+                <span class="tooltip" data-tooltip="RStudio : IDE pour analyse statistique et data science en R.">RStudio</span>
+            </li>
+            <li>
+                Concepts :
+                <span class="tooltip" data-tooltip="POO : Programmation orientée objet pour modularité et réutilisation.">POO</span>,
+                <span class="tooltip" data-tooltip="Machine Learning : Techniques pour entraîner des modèles prédictifs.">Machine Learning</span>,
+                <span class="tooltip" data-tooltip="NLP : Traitement automatique du langage naturel.">NLP</span>,
+                <span class="tooltip" data-tooltip="Développement web : Création de sites et applications web.">Développement web</span>,
+                <span class="tooltip" data-tooltip="Analyse de données : Extraction et interprétation d’informations à partir de données.">Analyse de données</span>
+            </li>
         </ul>
+        <div id="tooltip-container"></div>
     </div>
+
+
 
     <div class="formation">
         <h1>Formation</h1>
 
         <div itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
-            <p><em itemprop="name">Université de Bretagne Occidentale (UBO)</em></p>
-            <p>Cycle d’ingénieur en Génie Informatique</p>
+            <p><em itemprop="name">Université de Bretagne Occidentale (UBO) – Brest, France</em></p>
+            <button class="btn-details">Détails</button>
+
+            <div class="details" style="display: none" >
+                <p><strong>Master DOSI – Développement Logiciel des Systèmes d’Information</strong></p>
+                <ul>
+                    <li><em>Cycle d’ingénierie logicielle et systèmes d’information</em></li>
+                    <li><strong>Modules principaux :</strong> Architecture logicielle, Gestion de projets informatiques, Génie logiciel avancé, Cloud computing, Bases de données distribuées, Sécurité des systèmes, Intelligence artificielle appliquée, Développement d’applications d’entreprise (Java EE, Spring, Angular).</li>
+                    <li><strong>Compétences développées :</strong> conception et développement d’applications complexes, modélisation UML, gestion de projets agiles, intégration continue, analyse de données, travail en équipe internationale et communication technique.</li>
+                </ul>
+
+            </div>
         </div>
 
         <div itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
-            <p><em itemprop="name">École Nationale des Sciences Appliquées de Kénitra (ENSAK)</em></p>
-            <p>Génie Informatique – Projets en Machine Learning et développement web</p>
+            <p><em itemprop="name">École Nationale des Sciences Appliquées de Kénitra (ENSAK) – Maroc</em></p>
+            <button class="btn-details">Détails</button>
+
+            <div class="details" style="display: none" >
+                <p><strong>Cycle d’ingénieur en Génie Informatique</strong></p>
+                <ul>
+                    <li><em>Formation pluridisciplinaire en informatique et technologies émergentes</em></li>
+                    <li><strong>Modules principaux :</strong> Programmation orientée objet (Java, C++), Développement web (HTML, CSS, JavaScript, PHP, SQL), Systèmes d’exploitation, Réseaux informatiques, Base de données (Oracle, MySQL), Intelligence artificielle, Machine Learning, Sécurité informatique, Génie logiciel, Algorithmique avancée.</li>
+                    <li><strong>Compétences développées :</strong> conception et développement web et logiciel, modélisation de systèmes, analyse et optimisation d’algorithmes, gestion et administration de bases de données, apprentissage automatique, résolution de problèmes informatiques complexes et travail en équipe projet.</li>
+                </ul>
+
+            </div>
         </div>
     </div>
+
 
     <div class="lang">
         <h1>Langues</h1>
@@ -117,5 +170,8 @@
         </div>
     </footer>
 </div>
+
+<script src="JS/cv.js"></script>
+
 </body>
 </html>
